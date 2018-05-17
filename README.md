@@ -23,32 +23,14 @@
     * symbol `TBL`
     * name `Tombola`
     * decimals `18`
-    * supply `90,000,000 TBL`
-* Total of `90,000,000 TBL` tokens
-  * Tranche 1 TBL Pre Token Sale
-    * Hard cap of `7,000,000 TBL`
-    * START_DATE = `TBC`
-    * END_DATE = `TBC`
-    * No minimum funding threshold (No soft cap)
-  * Tranche 2 TBL Main Token Sale
-    * START_DATE = `TBC`
-    * END_DATE = `TBC`
-    * No Soft Cap (We will use 3rd party escrow to enforce a minimum raise of 3,500,000 TBL)
-    * Hard cap of `65,000,000 TBL`
-    * Number of unsold token from pre-sale will not be transferred to this stage
-  * Bounty Program Reward
-    * `3,000,000 TBL` will be manually created via the addprecommitment function. It should not count towards the individual Tranche 1 or Tranche 2 caps
-  * Locked Token (20%) - After ICO is completed, the smart contract will generate an additional `20%` of all tokens sold and time-lock it for the company at 1 and 2 years
-    * `10%` locked for 1 year
-    * `10%` locked for 2 years
-* Other Requirements
+    * supply `300,000,000 TBL`
+* Requirements
   * Contract Documentation and owner user guide
   * Self-Audit and Testing Report
   * Deployment Guideline and Checklist
   * A Complete Smart Contract Code:
     * Standard ERC20 Token Contract
     * Standard Contract Function, eg transferOwnership etc
-    * Standard KYC function
     * Able to set wallet address any time
     * Able to set price per token any time
     * Able to stop/start the token sale anytime
