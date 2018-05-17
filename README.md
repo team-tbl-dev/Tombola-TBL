@@ -51,18 +51,14 @@
     * Standard KYC function
     * Able to set wallet address any time
     * Able to set price per token any time
-    * Support 2 pricing schema in one token sale stage
     * Able to stop/start the token sale anytime
     * Start/stop token sale can also be control by Timestamp
     * Able to start token sale multiple times
     * A mintable token, TBL token only produce when someone contribute
-    * A lockable token, some of the tokens will be lock for 1yr and 2yr
-    * 20% number of the sold token will be added to wallet after the main finalised, that's mean user can only buy `72,000,000 TBL` token
 
 # Operations On The Token Sale Contract
 
 * Anytime
-    * Owner can call `kycVerify(...)` to verify participants, but this should be done after the crowdsale as the participants can transfer tokens immediately after being verified
     * Owner can call `transferOwnership(...)` to allow the current owner to transfer control of the contract to a newOwner.
 * After Start Date And Before End Date
     * Participants can send ETH to the `default () function` and receive tokens
@@ -74,13 +70,9 @@
     * Owner can call `setSalePeriod(...)` to set the maximum of the next token sale
     * Owner can call `addPrecommitment(...)` to add precommitment balances
     * Owner can call `setWalletAddress(...)` to update address where funds are collected
-    * Owner can call `setVipAddress(...)` to add VIP buyer address
-    * Owner can call `unsetVipAddress(...)` to remove VIP buyer address
     * Owner can call `pause()` and `unpause()` to start or stop the crowdsale
 * After Finalised
     * Participant can call the normal `transfer(...)`, `increaseApproval(...)`,`decreaseApproval(...)` ,`approve(...)` and `transferFrom(...)` to transfer tokens
-* After 1 Year And 2 Years
-    * Participants with locked tokens can called the `Y1_release()` and `Y2_release()` to unlock their tokens
 
 # Prerequisite
 * Node ≥ 7.6 confirm by entering node -v in command line
