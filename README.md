@@ -23,7 +23,7 @@
     * symbol `TBL`
     * name `Tombola`
     * decimals `18`
-    * supply `300,000,000 TBL`
+    * supply `500,000,000 TBL`
 * Functions
   * Contract Documentation and owner user guide
   * Self-Audit and Testing Report

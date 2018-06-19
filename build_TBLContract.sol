@@ -1,4 +1,4 @@
-pragma solidity ^0.4.19;
+pragma solidity 0.4.19;
 
 // File: zeppelin-solidity/contracts/ownership/Ownable.sol
 
@@ -508,7 +508,6 @@ contract FinalizableCrowdsale is Crowdsale, Ownable {
 
 contract TBLTokenCrowdsale is FinalizableCrowdsale, Pausable {
 
-    uint256 public restrictedPercent;
     address public restricted;
     uint256 public soldTokens;
     uint256 public hardCap;
@@ -520,14 +519,13 @@ contract TBLTokenCrowdsale is FinalizableCrowdsale, Pausable {
         Crowdsale(_startTime, _endTime, _rate, _wallet) {
         
         // total token supply for sales
-        totalTokenSupply = 300000000 * 10 ** 18;
+        totalTokenSupply = 500000000 * 10 ** 18;
 
         // hardCap for pre-sale
-        hardCap = 45000000 * 10 ** 18;
+        hardCap = 250000000 * 10 ** 18;
 
         soldTokens = 0;
 
-        restrictedPercent = 55;
         restricted = msg.sender;
     }
 
