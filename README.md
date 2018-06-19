@@ -23,8 +23,8 @@
     * symbol `TBL`
     * name `Tombola`
     * decimals `18`
-    * supply `300,000,000 TBL`
-* Requirements
+    * supply `500,000,000 TBL`
+* Functions
   * Contract Documentation and owner user guide
   * Self-Audit and Testing Report
   * Deployment Guideline and Checklist
@@ -47,7 +47,6 @@
     * Owner can call `finalise()` if soft cap reached or we are past the end date
 * Before Finalised
     * Owner can call `setRate(...)` to set the exchange rate
-    * Owner can call `setVipRate(...)` to set the vip exchange rate
     * Owner can call `setHardCap(...)` to set the maximum of the next token sale
     * Owner can call `setSalePeriod(...)` to set the maximum of the next token sale
     * Owner can call `addPrecommitment(...)` to add precommitment balances
@@ -75,3 +74,6 @@
 * `npm install truffle-flattener -g`
 * `npm run build-gist`
 * Copy the generated file, use remix.ethereum compile the code
+
+# How to deploy on mainnet
+* https://goo.gl/hWp3Sy
