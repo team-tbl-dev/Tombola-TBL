@@ -55,25 +55,3 @@
 * After Finalised
     * Participant can call the normal `transfer(...)`, `increaseApproval(...)`,`decreaseApproval(...)` ,`approve(...)` and `transferFrom(...)` to transfer tokens
 
-# Prerequisite
-* Node ≥ 7.6 confirm by entering node -v in command line
-* npm ≥ 4 confirm by entering npm -v in command line
-* Truffle ≥ 3.3 confirm by entering truffle -v in command line
-* ganache-cli ≥ 4.0.0 confirm by entering ganache-cli -v in command line
-
-# How to build:
-* install `truffle`, `ganache-cli` (testrpc)
-* `npm install`
-* `truffle compile`
-
-# How to test:
-* `ganache-cli -m "abc"` (abc is the key generating seed)
-* `npm run test`
-
-# How to test on testnet and mainnet:
-* `npm install truffle-flattener -g`
-* `npm run build-gist`
-* Copy the generated file, use remix.ethereum compile the code
-
-# How to deploy on mainnet
-* https://goo.gl/hWp3Sy
